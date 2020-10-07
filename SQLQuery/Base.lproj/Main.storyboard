@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestSQLQuery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhb-A5-ObE">
+                                <rect key="frame" x="120" y="462.5" width="174" height="36"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Random">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SNp-Xq-zjf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palavra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amH-Tg-8th">
+                                <rect key="frame" x="148" y="231" width="118" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sap-OD-ziI">
+                                <rect key="frame" x="120" y="370" width="174" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vhb-A5-ObE" firstAttribute="top" secondItem="amH-Tg-8th" secondAttribute="bottom" constant="186" id="5CO-5c-0bn"/>
+                            <constraint firstItem="Vhb-A5-ObE" firstAttribute="top" secondItem="sap-OD-ziI" secondAttribute="bottom" constant="58.5" id="6Q3-em-jiv"/>
+                            <constraint firstItem="Vhb-A5-ObE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="I1q-wo-Ga0"/>
+                            <constraint firstItem="sap-OD-ziI" firstAttribute="centerX" secondItem="amH-Tg-8th" secondAttribute="centerX" id="TiM-F3-bOY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vhb-A5-ObE" secondAttribute="trailing" constant="120" id="ax1-O9-HQW"/>
+                            <constraint firstItem="amH-Tg-8th" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dcS-dy-elX"/>
+                            <constraint firstItem="sap-OD-ziI" firstAttribute="trailing" secondItem="Vhb-A5-ObE" secondAttribute="trailing" id="om2-n1-uJb"/>
+                            <constraint firstItem="amH-Tg-8th" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="187" id="ou3-Tj-fhY"/>
+                            <constraint firstItem="sap-OD-ziI" firstAttribute="leading" secondItem="Vhb-A5-ObE" secondAttribute="leading" id="p7Q-8d-pJU"/>
+                            <constraint firstItem="sap-OD-ziI" firstAttribute="top" secondItem="amH-Tg-8th" secondAttribute="bottom" constant="93.5" id="rqc-aa-f2a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="amH-Tg-8th" id="PWI-5G-UeX"/>
+                        <outlet property="textField" destination="sap-OD-ziI" id="uCB-UQ-jDT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
