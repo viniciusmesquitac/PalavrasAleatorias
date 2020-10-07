@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestSQLQuery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SQLQuery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,6 +38,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oin-jA-o5A">
+                                <rect key="frame" x="184" y="127" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -45,6 +51,8 @@
                             <constraint firstItem="Vhb-A5-ObE" firstAttribute="top" secondItem="amH-Tg-8th" secondAttribute="bottom" constant="186" id="5CO-5c-0bn"/>
                             <constraint firstItem="Vhb-A5-ObE" firstAttribute="top" secondItem="sap-OD-ziI" secondAttribute="bottom" constant="58.5" id="6Q3-em-jiv"/>
                             <constraint firstItem="Vhb-A5-ObE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="I1q-wo-Ga0"/>
+                            <constraint firstItem="Oin-jA-o5A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83" id="RN0-Xe-x1s"/>
+                            <constraint firstItem="Oin-jA-o5A" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="StF-fa-Jdf"/>
                             <constraint firstItem="sap-OD-ziI" firstAttribute="centerX" secondItem="amH-Tg-8th" secondAttribute="centerX" id="TiM-F3-bOY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vhb-A5-ObE" secondAttribute="trailing" constant="120" id="ax1-O9-HQW"/>
                             <constraint firstItem="amH-Tg-8th" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dcS-dy-elX"/>
@@ -57,6 +65,7 @@
                     <connections>
                         <outlet property="label" destination="amH-Tg-8th" id="PWI-5G-UeX"/>
                         <outlet property="textField" destination="sap-OD-ziI" id="uCB-UQ-jDT"/>
+                        <outlet property="timerLabel" destination="Oin-jA-o5A" id="PXJ-yS-1p2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -20,6 +20,7 @@
 		81FEC5D6252CC3350089E7C3 /* papalavrasdb.db in Resources */ = {isa = PBXBuildFile; fileRef = 81FEC5CD252CB4970089E7C3 /* papalavrasdb.db */; };
 		81FEC5E1252DE44B0089E7C3 /* RandomRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FEC5E0252DE44B0089E7C3 /* RandomRange.swift */; };
 		81FEC67F252DF1EF0089E7C3 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FEC665252DF1E00089E7C3 /* SQLite.framework */; };
+		81FEC684252E00AD0089E7C3 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FEC683252E00AD0089E7C3 /* TimerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		81FEC5CE252CB5430089E7C3 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		81FEC5E0252DE44B0089E7C3 /* RandomRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRange.swift; sourceTree = "<group>"; };
 		81FEC65A252DF1DF0089E7C3 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = SQLite/SQLite.xcodeproj; sourceTree = "<group>"; };
+		81FEC683252E00AD0089E7C3 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				81FEC54B252CB20C0089E7C3 /* Assets.xcassets */,
 				81FEC54D252CB20C0089E7C3 /* LaunchScreen.storyboard */,
 				81FEC550252CB20C0089E7C3 /* Info.plist */,
+				81FEC683252E00AD0089E7C3 /* TimerModel.swift */,
 			);
 			path = SQLQuery;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				81FEC547252CB20B0089E7C3 /* ViewController.swift in Sources */,
 				81FEC5E1252DE44B0089E7C3 /* RandomRange.swift in Sources */,
 				81FEC543252CB20B0089E7C3 /* AppDelegate.swift in Sources */,
+				81FEC684252E00AD0089E7C3 /* TimerModel.swift in Sources */,
 				81FEC5C3252CB3790089E7C3 /* DBReader.swift in Sources */,
 				81FEC545252CB20B0089E7C3 /* SceneDelegate.swift in Sources */,
 			);
